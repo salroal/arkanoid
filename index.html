@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arkanoid</title>
+    <link rel="shortcut icon" href="img/fondoretro.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Juego de Arkanoid</h1>
+    <table>
+        <tr>
+            <td id="marcador" rowspan="2" colspan="8"><span>1 UP HIGH SCORE</span><br> 00<span id="espacio">__</span>50000</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td id="primeraFila">17</td>
+            <td id="primeraFila">18</td>
+            <td id="primeraFila">19</td>
+            <td id="primeraFila">20</td>
+            <td id="primeraFila">21</td>
+            <td id="primeraFila">22</td>
+            <td id="primeraFila">23</td>
+            <td id="primeraFila">24</td>
+        </tr>
+        <tr>
+            <td id="segundaFila">26</td>
+            <td id="segundaFila">25</td>
+            <td id="segundaFila">27</td>
+            <td id="segundaFila">28</td>
+            <td id="segundaFila">29</td>
+            <td id="segundaFila">30</td>
+            <td id="segundaFila">31</td>
+            <td id="segundaFila">32</td>
+        </tr>
+        <tr>
+            <td id="terceraFila">33</td>
+            <td id="terceraFila">34</td>
+            <td id="terceraFila">35</td>
+            <td id="terceraFila">36</td>
+            <td id="terceraFila">37</td>
+            <td id="terceraFila">38</td>
+            <td id="terceraFila">39</td>
+            <td id="terceraFila">40</td>
+        </tr>
+        <tr>
+            <td id="cuartaFila">41</td>
+            <td id="cuartaFila">42</td>
+            <td id="cuartaFila">43</td>
+            <td id="cuartaFila">44</td>
+            <td id="cuartaFila">45</td>
+            <td id="cuartaFila">46</td>
+            <td id="cuartaFila">47</td>
+            <td id="cuartaFila">48</td>
+        </tr>
+        <tr>
+            <td id="quintaFila">49</td>
+            <td id="quintaFila">50</td>
+            <td id="quintaFila">51</td>
+            <td id="celdaVacia">52</td>
+            <td id="quintaFila">53</td>
+            <td id="celdaVacia">54</td>
+            <td id="celdaVacia">55</td>
+            <td id="quintaFila">56</td>
+        </tr>
+        <tr>
+            <td id="sextaFila">57</td>
+            <td id="celdaVacia">58</td>
+            <td id="sextaFila">59</td>
+            <td id="celdaVacia">60</td>
+            <td id="celdaVacia">61</td>
+            <td id="celdaVacia">62</td>
+            <td id="celdaVacia">63</td>
+            <td id="sextaFila">64</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">65</td>
+            <td id="celdaVacia">66</td>
+            <td id="celdaVacia">67</td>
+            <td id="celdaVacia">68</td>
+            <td id="celdaVacia">69</td>
+            <td id="celdaVacia">70</td>
+            <td id="celdaVacia">71</td>
+            <td id="celdaVacia">72</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">73</td>
+            <td id="celdaVacia">74</td>
+            <td id="celdaVacia">75</td>
+            <td id="celdaVacia">76</td>
+            <td id="celdaVacia">77</td>
+            <td id="celdaVacia">78</td>
+            <td id="bola"></td>
+            <td id="celdaVacia">80</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">81</td>
+            <td id="celdaVacia">82</td>
+            <td id="celdaVacia">83</td>
+            <td id="celdaVacia">84</td>
+            <td id="celdaVacia">85</td>
+            <td id="celdaVacia">86</td>
+            <td id="celdaVacia">87</td>
+            <td id="celdaVacia">88</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">89</td>
+            <td id="celdaVacia">90</td>
+            <td id="celdaVacia">91</td>
+            <td id="celdaVacia">92</td>
+            <td id="celdaVacia">93</td>
+            <td id="celdaVacia">94</td>
+            <td id="celdaVacia">95</td>
+            <td id="celdaVacia">96</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">97</td>
+            <td id="celdaVacia">98</td>
+            <td id="celdaVacia">99</td>
+            <td id="celdaVacia">100</td>
+            <td id="celdaVacia">101</td>
+            <td id="celdaVacia">102</td>
+            <td id="celdaVacia">103</td>
+            <td id="celdaVacia">104</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">105</td>
+            <td id="celdaVacia">106</td>
+            <td id="celdaVacia">107</td>
+            <td id="celdaVacia">108</td>
+            <td id="celdaVacia">109</td>
+            <td id="celdaVacia">110</td>
+            <td id="celdaVacia">111</td>
+            <td id="celdaVacia">112</td>
+        </tr>
+        <tr>
+            <td id="celdaVacia">113</td>
+            <td id="celdaVacia" colspan="2"><img src="img/barra.png" align="right"></td>
+            <td id="celdaVacia">115</td>
+            <td id="celdaVacia">116</td>
+            <td id="celdaVacia">117</td>
+            <td id="celdaVacia">118</td>
+            <td id="celdaVacia">119</td>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+</html>
